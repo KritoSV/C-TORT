@@ -18,4 +18,4 @@ else
 {
 Console.WriteLine($"Вывод большего зачения: {number2}"); 
 }
-//Finshed
+//Finshed programm!
