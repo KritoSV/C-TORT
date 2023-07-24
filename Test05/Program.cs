@@ -1,37 +1,38 @@
 ﻿
 
-void Circle(int r, int xo , int yo, int xa, int ya){
-Console.SetCursorPosition(xo, yo);
-Console.Write("*");
-while (xa != xo + r + 1)
+void Circle(int r, int xo, int yo, int xa, int ya)
 {
-    ya = yo - (int)(Math.Sqrt(Math.Pow(r, 2) - Math.Pow(xa - xo, 2)));
-    Console.SetCursorPosition(xa, ya);
+    Console.SetCursorPosition(xo, yo);
     Console.Write("*");
-    //await Task.Delay(50);
-    ya = yo + (int)(Math.Sqrt(Math.Pow(r, 2) - Math.Pow(xa - xo, 2)));
-    Console.SetCursorPosition(xa, ya);
-    Console.Write("*");
-    //await Task.Delay(50);
-    xa++;
-}
-
-// Заполнение окружности
-xa = xo - r;
-int y1, y2;
-while (xa != xo + r + 1)
-{
-    y1 = yo - (int)(Math.Sqrt(Math.Pow(r, 2) - Math.Pow(xa - xo, 2)));
-    y2 = yo + (int)(Math.Sqrt(Math.Pow(r, 2) - Math.Pow(xa - xo, 2)));
-    while (y1 != y2)
+    while (xa != xo + r + 1)
     {
-        Console.SetCursorPosition(xa, y1);
+        ya = yo - (int)(Math.Sqrt(Math.Pow(r, 2) - Math.Pow(xa - xo, 2)));
+        Console.SetCursorPosition(xa, ya);
         Console.Write("*");
-        //await Task.Delay(10);
-        y1++;
+        //await Task.Delay(50);
+        ya = yo + (int)(Math.Sqrt(Math.Pow(r, 2) - Math.Pow(xa - xo, 2)));
+        Console.SetCursorPosition(xa, ya);
+        Console.Write("*");
+        //await Task.Delay(50);
+        xa++;
     }
-    xa++;
-}
+
+    // Заполнение окружности
+    xa = xo - r;
+    int y1, y2;
+    while (xa != xo + r + 1)
+    {
+        y1 = yo - (int)(Math.Sqrt(Math.Pow(r, 2) - Math.Pow(xa - xo, 2)));
+        y2 = yo + (int)(Math.Sqrt(Math.Pow(r, 2) - Math.Pow(xa - xo, 2)));
+        while (y1 != y2)
+        {
+            Console.SetCursorPosition(xa, y1);
+            Console.Write("*");
+            //await Task.Delay(10);
+            y1++;
+        }
+        xa++;
+    }
 }
 
 // Создание окружности
@@ -96,8 +97,8 @@ xa = xo - r; ya = yo;
 Circle(r, xo, yo, xa, ya);
 
 int x = 50;
-int i = 30-r-10;
-while(i <= 30-r-5)
+int i = 30 - r - 10;
+while (i <= 30 - r - 5)
 {
     Console.SetCursorPosition(x, i);
     Console.Write(" ");
@@ -105,3 +106,5 @@ while(i <= 30-r-5)
 }
 
 Console.SetCursorPosition(0, 60);
+
+

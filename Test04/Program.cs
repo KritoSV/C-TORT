@@ -23,3 +23,5 @@ while (count <= number)
 
 
 Console.WriteLine();
+
+//Finished programm!

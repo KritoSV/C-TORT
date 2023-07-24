@@ -5,7 +5,7 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-Console.WriteLine("Введите первое целое число: ");
+System.Console.WriteLine("Введите первое целое число: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе целое число: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
@@ -18,4 +18,4 @@ else
 {
 Console.WriteLine($"Вывод большего зачения: {number2}"); 
 }
-//Finshed programm!
+//Finished programm!

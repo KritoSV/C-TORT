@@ -7,14 +7,16 @@
 Console.WriteLine("Введите чётное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-while (number % 2 == 0)
+if (number % 2 == 0)
 {
     Console.WriteLine($"Поздравляем, Вы ввели чётное число: {number}");
 }
-while (number % 2 == 1)
+if (number % 2 == 1)
 {
     Console.WriteLine("Поздравляем, Вы не знаете чётных чисел! =)");
     Console.Write("Попробуйте снова :");
     number = Convert.ToInt32(Console.ReadLine());
 }
-Console.WriteLine($"Поздравляем, Вы молодец. чётное число: {number}");
+Console.WriteLine($"Поздравляем, Вы молодец. Чётное число: {number}");
+
+//Finished programm!
