@@ -14,6 +14,7 @@ if (number < 9999 || number > 99999)
     Console.WriteLine("У Вас проблемы с математикой?");
     goto metka;
 }
+PalindromeOrNot(number);
 void PalindromeOrNot(int num)
 {
     int reverseNum = 0;
@@ -27,5 +28,3 @@ void PalindromeOrNot(int num)
     if (num == reverseNum) Console.WriteLine("Число является полиндромом");
     else Console.WriteLine("Число не является полиндромом");
 }
-
-PalindromeOrNot(number);
