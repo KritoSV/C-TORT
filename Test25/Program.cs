@@ -11,7 +11,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 if (number < 0)
 {
-    Console.WriteLine("Пожалуйста сходите НА ХУЙ и принесите натуральное число.");
+    Console.WriteLine("Принесите натуральное число.");
     goto metka;
 }
 
