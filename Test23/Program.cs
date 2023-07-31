@@ -10,6 +10,7 @@ PrintArr(array);
 
 void FillArr(int[] arr)
 {
+    Random rnd = new Random();
     for (int i = 0; i < arr.Length; i++)
     {
         arr[i] = new Random().Next(0, 2);
