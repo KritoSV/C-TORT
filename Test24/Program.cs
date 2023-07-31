@@ -16,9 +16,6 @@ if (number2 <= 0)
     Console.WriteLine("Некорректная степень числа.");
     goto metka;
 }
-
-
-PowerNumbers(number1, number2);
 double PowerNumbers(double a, double pow)
 {
     double num = 1;
@@ -28,7 +25,6 @@ double PowerNumbers(double a, double pow)
         {
             num *= a;
         }
-
     }
     return num;
 }
