@@ -8,12 +8,12 @@ Console.WriteLine("Введите натуральное число: ");
 double number = Convert.ToInt32(Console.ReadLine());
 
 double factorial = Factorial(number);
-Console.WriteLine($"Количество цифр в числе {number} -> {factorial}");
+Console.WriteLine($"Произведение числел от 1 до {number} -> {factorial}");
 
 double Factorial(double num)
 {
     double fac = 1;
-    for (double i = 1; i < num; i++)
+    for (double i = 1; i <= num; i++)
     {
         checked
         {
@@ -22,3 +22,15 @@ double Factorial(double num)
     }
     return fac;
 }
+
+
+// int CompositionNumbers(int num)
+// {
+//     int composition = 1;
+//     while (num != 0)
+//     {
+//         checked
+//         { composition *= num; num--; }
+//     }
+//     return composition;
+// }
