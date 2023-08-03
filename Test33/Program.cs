@@ -30,7 +30,7 @@ void PrintArray(double[] arr)
     Console.WriteLine("]");
 }
 
-double DifferenceNumber(double[] arr)
+(double, double, double) DifferenceNumber(double[] arr)
 {
     double maxnum = arr[0];
     double minnum = arr[0];
@@ -45,12 +45,12 @@ double DifferenceNumber(double[] arr)
             maxnum = arr[i];
         }
     }
-    return maxnum - minnum;
+    return (maxnum, minnum, maxnum - minnum);
 }
 
 double[] array = CreateArrayRndInt(5, -999, 1000);
 PrintArray(array);
 
-double result = DifferenceNumber(array);
-Console.WriteLine($"Разница максимального и минимального элементов -> {result}");
+var result = DifferenceNumber(array);
+Console.WriteLine($"Разница максимального: {result.Item1}; и минимального: {result.Item2}; элементов массива -> {result.Item3}");
 
