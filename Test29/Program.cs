@@ -26,10 +26,8 @@ void PrintArray(int[] arr)
     Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i < arr.Length - 1)
-            Console.Write($"{arr[i]}, ");
-        else
-            Console.Write($"{arr[i]}");
+        if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
+        else Console.Write($"{arr[i]}");
     }
     Console.Write("]");
 }
@@ -39,8 +37,7 @@ int CountTwoDigitNumbers(int[] arr, int start, int end)
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i] >= start && arr[i] <= end)
-            count++;
+        if (arr[i] >= start && arr[i] <= end) count++;
     }
     return count;
 }
