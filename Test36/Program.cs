@@ -9,8 +9,13 @@
 // 8 7,8 -7,1 9
 
 // Console.WriteLine("Прошу, ваш массив -> ");
+Console.Clear();
+
 int m = 3; int n = 4;
 
+
+double min = -10;
+double max = 10;
 double[,] MassNum = new double[m, n];
 Console.WriteLine("Ваш рандомный массив, Сэр! -> ");
 void ProPry()
@@ -19,10 +24,13 @@ void ProPry()
     {
         for (int j = 0; j < MassNum.GetLength(1); j++)
         {
-            MassNum[i, j] = new Random().Next(-10, 10);
-            Console.Write($"{MassNum[i, j], 4} ");
+            MassNum[i, j] = new Random().NextDouble() * (max - min)+ min;
+            MassNum[i, j] = Math.Round(MassNum[i, j], 2);
+            Console.Write($"{MassNum[i, j], 6} ");
+
         }
         Console.WriteLine();
     }
 }
+
 ProPry();
