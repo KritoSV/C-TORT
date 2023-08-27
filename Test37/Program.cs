@@ -29,6 +29,13 @@ int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Пользователь, укажите нужный столбец: ");
 int b = Convert.ToInt32(Console.ReadLine());
 
+if(a < 0 || b < 0)
+{
+    a = Math.Abs(a);
+    b = Math.Abs(b);
+    Console.WriteLine("Уважаемый пользователь, в данном массиве отутстуют отрицательные позиции.\nВаши отрицательные числа были преобразовани в положительные.");
+}
+
 int? result = ReversPoint(a, b, MassNum);
 
 if (result == null)
