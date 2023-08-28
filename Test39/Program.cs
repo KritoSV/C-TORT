@@ -2,7 +2,7 @@
 
 
 
-Console.WriteLine("Здравствуйте пользователь! Давайте поиграем в математику.");
+Console.WriteLine("Давай поиграем в математику!?");
 
 
 int min = 1;
@@ -26,6 +26,7 @@ void UserSumNumber(int un, int s)
     if (un == s)
     {
         Console.WriteLine($"Молодец, {userNum} это правильный ответ.");
+        
     }
     else
     {
